@@ -1,3 +1,5 @@
+<!-- login page -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,21 +9,47 @@
 </head>
 <body>
 
-	<div class="container" id="content">
-		<div id="logo">
-			<img src="images/nsis_logo.gif"/>
+	<div class="container">
+
+		<!-- navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Instructions</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								Dropdown <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Announcements</a></li>
+								<li><a href="#">Troubleshooting</a></li>
+								<li><a href="#">References</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<!-- content -->
+		<div class="container" id="content">
+			<div id="logo">
+				<img src="images/nsis_logo.gif"/>
+			</div>
+			
+			<form>
+				<fieldset class="form-group">
+					<label for="username">Username (RIN):</label>
+					<input type="text" id="username" name="username" class="form-control"/>
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="password">Password:</label>
+					<input type="text" id="password" name="password" class="form-control"/>
+				</fieldset>
+				<a href="#" class="btn btn-primary" role="button">Submit</a>
+			</form>
 		</div>
-		
-		<form>
-			<fieldset class="form-group">
-				<label for="username">Username (RIN):</label>
-				<input type="text" id="username" name="username" class="form-control"/>
-			</fieldset>
-			<fieldset class="form-group">
-				<label for="password">Password:</label>
-				<input type="text" id="password" name="password" class="form-control"/>
-			</fieldset>
-			<a href="#" class="btn btn-primary" role="button">Submit</a>
-		</form>
 	</div>
 </body>
