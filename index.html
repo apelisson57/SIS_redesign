@@ -12,34 +12,36 @@
 	<div class="container">
 
 		<!-- navbar -->
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Instructions</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-								Dropdown <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Announcements</a></li>
-								<li><a href="#">Troubleshooting</a></li>
-								<li><a href="#">References</a></li>
-							</ul>
-						</li>
-					</ul>
+		<div id="banner">
+			<nav class="navbar navbar-default" id="loginNav">
+				<div class="container-fluid">
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Instructions</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Dropdown <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Announcements</a></li>
+									<li><a href="#">Troubleshooting</a></li>
+									<li><a href="#">References</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</div>
 
 
 		<!-- content -->
-		<div class="container" id="content">
-			<div id="logo">
+		<div class="container center-block" id="content">
+			<div id="logo" class="center-block container-fluid">
 				<img src="images/nsis_logo.gif"/>
 			</div>
 			
-			<form>
+			<form id="login" class="center-block">
 				<fieldset class="form-group">
 					<label for="username">Username (RIN):</label>
 					<input type="text" id="username" name="username" class="form-control"/>
