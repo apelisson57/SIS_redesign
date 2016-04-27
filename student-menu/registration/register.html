@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rensselaer's Student Information System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<!-- navbar -->
+		<div id="banner">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a href="../../main.html" class="navbar-brand">Rensselaer SIS</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Personal Information <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Change Account Credentials</a></li>
+									<li><a href="#">Update contact info</a></li>
+									<li><a href="#">Veteran Classification</a></li>
+								</ul>
+							</li>
+							<li class="dropdown active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Student Menu <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="active"><a href="registration-info.html">Registration</a></li>
+									<li><a href="curriculum-info.html">Curriculum Information</a></li>
+									<li><a href="graduation-info.html">Graduation Information</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Financial Aid <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Financial Aid Menu</a></li>
+									<li><a href="#">View Your Aid Classification</a></li>
+									<li><a href="#">Veterans' Aid</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Help</a></li>
+							<li><a href="../../index.html">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+
+		<!-- content -->
+		<div class="jumbotron">
+
+			<!-- add classes -->
+			<h3 class="display-3">Add classes via CRN:</h3>
+			<form class="form-inline">
+				<fieldset class="form-group">
+					<input type="text" id="crn1" name="crn1" class="form-control col-md-2 col-sm-6 col-xs-12"/>
+					<input type="text" id="crn2" name="crn2" class="form-control col-md-2 col-sm-6 col-xs-12"/>
+					<input type="text" id="crn3" name="crn3" class="form-control col-md-2 col-sm-6 col-xs-12"/>
+					<input type="text" id="crn4" name="crn4" class="form-control col-md-2 col-sm-6 col-xs-12"/>
+					<input type="text" id="crn5" name="crn5" class="form-control col-md-2 col-sm-6 col-xs-12"/>
+					<input type="text" id="crn6" name="crn6" class="form-control col-md-2 col-sm-6 col-xs-12"/>
+				</fieldset>
+				<a href="#" class="btn btn-primary col-xs-12 col-sm-6 col-md-2" role="button">Submit Classes</a>
+			</form>
+
+			<!-- class search -->
+			<h3 class="display-3">Or search for a class</h3>
+			<form class="form-inline">
+				<fieldset class="form-group">
+					<label for="class-name" class="col-md-2 col-sm-6 col-xs-12">Class Name:</label>
+					<input type="text" id="class-name" name="class-name" class="form-control col-md-2 col-sm-6 col-xs-12"/>
+					<label for="department" class="col-md-2 col-sm-6 col-xs-12">Department:</label>
+					<select id="department" class="form-control col-md-2 col-sm-6 col-xs-12">
+						<option>ITWS</option>
+						<option>CSCI</option>
+						<option>COMM</option>
+						<option>ENGR</option>
+						<option>PHYS</option>
+						<option>MATH</option>
+					</select>
+					<label for="number" class="col-md-2 col-sm-6 col-xs-12">Number:</label>
+					<input type="text" id="number" name="number" class="form-control col-md-2 col-sm-6 col-xs-12"/>
+				</fieldset>
+				<a href="#" class="btn btn-primary col-xs-12 col-sm-4 col-md-2" role="button">Submit Search</a>
+			</form>
+		</div>
+
+		<h3>Currently Registered Classes</h3>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td>Class Name</td>
+					<td>CRN</td>
+					<td>Drop Class?</td>
+				</tr>
+			<tbody>
+				<tr>
+					<td>Intro to HCI - ITWS 2210 - 01</td>
+					<td>97364</td>
+					<td><a href="#" class="btn btn-danger" role="button">Drop</a></td>
+				</tr>
+				<tr>
+					<td>Rhetoric and Writing - WRIT 2110 - 01</td>
+					<td>98932</td>
+					<td><a href="#" class="btn btn-danger" role="button">Drop</a></td>
+				</tr>
+				<tr>
+					<td>Programming Languages - CSCI 4430 - 01</td>
+					<td>95373</td>
+					<td><a href="#" class="btn btn-danger" role="button">Drop</a></td>
+				</tr>
+				<tr>
+					<td>Parallel Programming - CSCI 4320 - 01</td>
+					<td>98964</td>
+					<td><a href="#" class="btn btn-danger" role="button">Drop</a></td>
+				</tr>
+
+			</tbody>		
+		</table>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>			
+</html>

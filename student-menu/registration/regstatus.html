@@ -3,7 +3,7 @@
 <head>
 	<title>Rensselaer's Student Information System</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="../css/style.css"/>
+	<link rel="stylesheet" href="../../css/style.css"/>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a href="../main.html" class="navbar-brand">Rensselaer SIS</a>
+						<a href="../../main.html" class="navbar-brand">Rensselaer SIS</a>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar">
@@ -33,9 +33,9 @@
 									Student Menu <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="registration-info.html">Registration</a></li>
+									<li class="active"><a href="registration-info.html">Registration</a></li>
 									<li><a href="curriculum-info.html">Curriculum Information</a></li>
-									<li class="active"><a href="#">Graduation Information</a></li>
+									<li><a href="graduation-info.html">Graduation Information</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -51,7 +51,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">Help</a></li>
-							<li><a href="../index.html">Logout</a></li>
+							<li><a href="../../index.html">Logout</a></li>
 						</ul>
 					</div>
 				</div>
@@ -61,16 +61,30 @@
 
 		<!-- content -->
 		<div class="jumbotron">
+			<!-- registration time period -->
+			<h3 class="display-3">Registration Time period</h3>
+			<table class="table table-striped">
+				<thead>
+						<td>From:</td>
+						<td>To:</td>
+					<tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>April 7, 2016 10:30 AM</td>
+					</tr>
+					<tr>
+						<td>April 18, 2016 11:59 PM</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- holds preventing registration -->
+			<h3 class="display-3">Holds preventing registration:</h3>
 			<table class="table table-striped">
 				<tbody>
 					<tr>
-						<td><a href="apply-grad.html">Apply to Graduate</a></td>
-					</tr>
-					<tr>
-						<td><a href="degstatus.html">View Degree Status and Diploma Information</a></td>
-					</tr>
-					<tr>
-						<td><a href="diploma-holds.html">View Diploma Holds</a></td>
+						<td>You currently have no holds preventing registration!</td>
 					</tr>
 				</tbody>
 			</table>
