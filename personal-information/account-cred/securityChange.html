@@ -14,7 +14,7 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a href="../main.html" class="navbar-brand">Rensselaer SIS</a>
+						<a href="../../main.html" class="navbar-brand">Rensselaer SIS</a>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar">
@@ -23,9 +23,9 @@
 									Personal Information <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="account-cred.html">Change Account Credentials</a></li>
-									<li><a href="contact.html">Update contact info</a></li>
-									<li><a href="veteran.html">Veteran Classification</a></li>
+									<li><a href="../account-cred.html">Change Account Credentials</a></li>
+									<li><a href="../contact.html">Update Contact Info</a></li>
+									<li><a href="../veteran.html">Veteran Classification</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -33,9 +33,9 @@
 									Student Menu <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="../student-menu/registration-info.html">Registration</a></li>
-									<li class="active"><a href="../student-menu/curriculum-info.html">Curriculum Information</a></li>
-									<li><a href="../student-info/graduation-info.html">Graduation Information</a></li>
+									<li><a href="../../student-menu/registration-info.html">Registration</a></li>
+									<li class="active"><a href="../../student-menu/curriculum-info.html">Curriculum Information</a></li>
+									<li><a href="../../student-menu/graduation-info.html">Graduation Information</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -51,28 +51,37 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">Help</a></li>
-							<li><a href="../index.html">Logout</a></li>
+							<li><a href="../../index.html">Logout</a></li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
 
-
-		<!-- content -->
-		<div class="center-block">
-			<table class="table table-striped">
-				<tbody>
-					<tr>
-						<td><a href="address.html">Update your Address</a></td>
-					</tr>
-					<tr>
-						<td><a href="emergContact.html">Update your Emergency Contacts</a></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
+	<h2>Change Security Question</h2>
+	Please enter your new Security Question and Answer and click Submit.
+	<br/>Please chose a question with a one word answer that reflects somthing personal.
+	<br/>Examples:
+	<ul>
+		<li>What is your city of birth?</li>
+		<li>What is your mother's maiden name?</li>
+		<li>What is your father's middle name?</li>
+	</ul>
+		<form id="pin-reset" class="center-block">
+				<fieldset class="form-group">
+					<label for="old-pin">Please Confirm your PIN:</label>
+					<input type="password" id="old-pin" name="old-pin" class="form-control"/>
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="question">Question:</label>
+					<input type="text" id="question" name="question" class="form-control"/>
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="answer">Answer:</label>
+					<input type="password" id="answer" name="answer" class="form-control"/>
+				</fieldset>
+				<a href="../account-cred.html" class="btn btn-primary" role="button">Submit</a>
+			</form>
 
 
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
