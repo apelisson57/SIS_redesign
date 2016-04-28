@@ -33,9 +33,9 @@
 									Student Menu <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li class="active"><a href="#">Registration</a></li>
+									<li><a href="registration-info.html">Registration</a></li>
 									<li><a href="curriculum-info.html">Curriculum Information</a></li>
-									<li><a href="graduation-info.html">Graduation Information</a></li>
+									<li class="active"><a href="#">Graduation Information</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -61,23 +61,17 @@
 
 		<!-- content -->
 		<div class="jumbotron">
-			<h2>Registration Menu</h2>
-			<table class="table table-striped">
-				<tbody>
-					<tr>
-						<td><a href="registration/regstatus.html">Check Registration Status</a></td>
-					</tr>
-					<tr>
-						<td><a href="registration/register.html">Register, Add or Drop</a></td>
-					</tr>
-					<tr>
-						<td><a href="#">Change Thesis/Project Credits</a></td>
-					</tr>
-					<tr>
-						<td><a href="registration/schedule.html">View Weekly Schedule Day/Time Grid</a></td>
-					</tr>
-				</tbody>
-			</table>
+			<h3>You have not submitted a graduation application at this time!</h3>
+			<form class="form-inline">
+				<fieldset class="col-xs-12 col-sm-6 col-med-4">
+					<label for="gradterm">Select Graduation Term</label>
+					<select id="gradterm" class="form-control">
+						<option>May 28, 2016</option>
+						<option>August 31, 2016</option>
+						<option>December 20, 2016</option>
+					</select>
+				</fieldset>
+			</form>
 		</div>
 	</div>
 

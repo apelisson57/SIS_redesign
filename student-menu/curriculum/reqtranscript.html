@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rensselaer's Student Information System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<!-- navbar -->
+		<div id="banner">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a href="../../main.html" class="navbar-brand">Rensselaer SIS</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Personal Information <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Change Account Credentials</a></li>
+									<li><a href="#">Update contact info</a></li>
+									<li><a href="#">Veteran Classification</a></li>
+								</ul>
+							</li>
+							<li class="dropdown active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Student Menu <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="active"><a href="registration-info.html">Registration</a></li>
+									<li><a href="curriculum-info.html">Curriculum Information</a></li>
+									<li><a href="graduation-info.html">Graduation Information</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Financial Aid <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Financial Aid Menu</a></li>
+									<li><a href="#">View Your Aid Classification</a></li>
+									<li><a href="#">Veterans' Aid</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Help</a></li>
+							<li><a href="../../index.html">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+
+		<!-- content -->
+		<div class="jumbotron">
+			<h2>Request a Transcript</h2>
+			<div class="container">
+				<form>
+					<fieldset>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="type">Transcript Type:</label>
+							<select id="type" class="form-control col-xs-12 col-sm-8 col-md-10">
+								<option>Official - Process Immediately</option>
+								<option>Unofficial - Process Immediately</option>
+								<option>Official - Hold for Grades</option>
+								<option>Unofficial - Hold for Grades</option>
+								<option>Official - Hold for Degree</option>
+								<option>Unofficial - Hold for Degree</option>
+							</select>
+						</div>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="recipient">Send to:</label>
+							<input id="recipient" name="recipient" type="text" class="col-xs-12 col-sm-8 col-md-10 form-control"/>
+						</div>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="address1">Address Line 1:</label>
+							<input id="address1" name="address1" type="text" class="col-xs-12 col-sm-8 col-md-10 form-control"/>
+						</div>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="address2">Address Line 2:</label>
+							<input id="address2" name="address2" type="text" class="col-xs-12 col-sm-8 col-md-10 form-control"/>
+						</div>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="address3">Address Line 3:</label>
+							<input id="address3" name="address3" type="text" class="col-xs-12 col-sm-8 col-md-10 form-control"/>
+						</div>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="city">City:</label>
+							<input id="city" name="city" type="text" class="col-xs-12 col-sm-8 col-md-10 form-control"/>
+						</div>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="state">State or Province</label>
+							<input id="state" name="state" type="text" class="col-xs-12 col-sm-8 col-md-10 form-control"/>
+						</div>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="zip">ZIP or Postal Code</label>
+							<input id="zip" name="zip" type="text" class="col-xs-12 col-sm-8 col-md-10 form-control"/>
+						</div>
+						<div class="row">
+							<label class="col-xs-12 col-sm-4 col-md-2" for="nation">Nation (if applicable)</label>
+							<input id="nation" name="nation" type="text" class="col-xs-12 col-sm-8 col-md-10 form-control"/>
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>			
+</html>
