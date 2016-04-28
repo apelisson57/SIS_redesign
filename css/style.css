@@ -1,9 +1,18 @@
+/*
+@media screen and (min-width: 350px) {
 
+
+
+
+}
+*/
 #loginNav {
 	float: right;
 	clear: left;
 
 }
+
+
 
 #logo {
 	text-align: center;
@@ -11,6 +20,17 @@
 
 }
 
+.content {
+	margin: 5%;
+}
+
+.content h1 {
+	font-size: 48px;
+}
+
+.content p {
+	margin-top: 5%;
+}
 
 #logo img {
 	width: 50%;
@@ -19,3 +39,9 @@
 #login {
 	width: 50%;
 }
+/*
+.linkTable {
+	border-radius: 2px;
+	border: 2px solid #aaa;
+}
+*/
