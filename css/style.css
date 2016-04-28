@@ -19,7 +19,7 @@
 	clear: right;
 
 }
-
+/*
 .content {
 	margin: 5%;
 }
@@ -31,6 +31,7 @@
 .content p {
 	margin-top: 5%;
 }
+*/
 
 #logo img {
 	width: 50%;
@@ -118,4 +119,10 @@
     color: #eecccc;
     background-color: #ce0000;
   }
+}
+
+.jumbotron {
+  background-color: #FFF;
+  border: 3px solid #ddd;
+  border-radius: 2px;
 }
