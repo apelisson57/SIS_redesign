@@ -3,11 +3,11 @@
 <head>
 	<title>Rensselaer's Student Information System</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="../css/style.css"/>
+	<link rel="stylesheet" href="../../css/style.css"/>
 </head>
 <body>
 
-	<div class="container">
+	<div class="container-fluid">
 
 		<!-- navbar -->
 		<div id="banner">
@@ -63,24 +63,26 @@
 				</div>
 			</nav>
 		</div>
+		<div class="jumbotron">
+			<h2>RPIAlert Phone Number</h2>
+			Please enter a cellular phone number where you can be notified in the event of a campus emergency.
 
-	<h2>RPIAlert Phone Number</h2>
-	Please enter a cellular phone number where you can be notified in the event of a campus emergency.
-
-	<form id="phone-alert" class="center-block">
-		<fieldset class="form-group">
-			<label for="phone-number">Enter Phone Number:</label>					<input type="phone" id="old-pin" name="old-pin" size="15" MAXLENGTH="10" class="form-control"/>
-		</fieldset>
-		<fieldset class="form-group">
-			<label for="text">This number has texting enabled.</label>
-			<input type="radio" id="text" name="text" class="form-control"/>
-		</fieldset>
-		<fieldset class="form-group">
-			<label for="no-phone">I do not have a cellular device.</label>
-			<input type="radio" id="no-phone" name="no-phone" class="form-control"/>
-		</fieldset>
-		<a href="../account-cred.html" class="btn btn-primary" role="button">Submit</a>
-	</form>
+			<form id="phone-alert" class="center-block">
+				<fieldset class="form-group">
+					<label for="phone-number">Enter Phone Number:</label>					<input type="phone" id="old-pin" name="old-pin" size="15" MAXLENGTH="10" class="form-control"/>
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="text">This number has texting enabled.</label>
+					<input type="radio" id="text" name="text" class="form-control"/>
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="no-phone">I do not have a cellular device.</label>
+					<input type="radio" id="no-phone" name="no-phone" class="form-control"/>
+				</fieldset>
+				<a href="../account-cred.html" class="btn btn-primary" role="button">Submit</a>
+			</form>
+		</div>
+	</div>
 
 
 

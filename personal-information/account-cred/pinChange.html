@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="container-fluid">
 
 		<!-- navbar -->
 		<div id="banner">
@@ -63,16 +63,16 @@
 				</div>
 			</nav>
 		</div>
-
-	<h2>Change PIN Number</h2>
-	First enter your old PIN.
-	<br/>Next, select and enter your new PIN. Re-enter your new PIN for verification.
-	<ul>
-		<li>Must be 6-15 characters long</li>
-		<li>May include any combination of alpha, numeric, or special characters</li>
-		<li>IS CASE SENSITIVE</li>
-	</ul>
-		<form id="pin-reset" class="center-block">
+		<div class="jumbotron">
+			<h2>Change PIN Number</h2>
+			First enter your old PIN.
+			<br/>Next, select and enter your new PIN. Re-enter your new PIN for verification.
+			<ul>
+				<li>Must be 6-15 characters long</li>
+				<li>May include any combination of alpha, numeric, or special characters</li>
+				<li>IS CASE SENSITIVE</li>
+			</ul>
+			<form id="pin-reset" class="center-block">
 				<fieldset class="form-group">
 					<label for="old-pin">Enter Old PIN:</label>
 					<input type="password" id="old-pin" name="old-pin" class="form-control"/>
@@ -87,6 +87,8 @@
 				</fieldset>
 				<a href="../account-cred.html" class="btn btn-primary" role="button">Submit</a>
 			</form>
+		</div>
+	</div>
 
 
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
