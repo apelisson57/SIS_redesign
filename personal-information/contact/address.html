@@ -24,7 +24,7 @@
 								</a>
 								<ul class="dropdown-menu">
 									<li><a href="../account-cred.html">Change Account Credentials</a></li>
-									<li><a href="../contact.html">Update contact info</a></li>
+									<li><a href="../contact.html">Update Contact Info</a></li>
 									<li><a href="../veteran.html">Veteran Classification</a></li>
 								</ul>
 							</li>
@@ -58,25 +58,22 @@
 			</nav>
 		</div>
 
-	<h2>RPIAlert Phone Number</h2>
-	Please enter a cellular phone number where you can be notified in the event of a campus emergency.
+	<h2>Update Addresses and Phones</h2>
 
-	<form id="pin-reset" class="center-block">
-				<fieldset class="form-group">
-					<label for="old-pin">Please Confirm your PIN:</label>
-					<input type="password" id="old-pin" name="old-pin" class="form-control"/>
-				</fieldset>
-				<fieldset class="form-group">
-					<label for="question">Question:</label>
-					<input type="text" id="question" name="question" class="form-control"/>
-				</fieldset>
-				<fieldset class="form-group">
-					<label for="answer">Answer:</label>
-					<input type="password" id="answer" name="answer" class="form-control"/>
-				</fieldset>
-				<a href="../account-cred.html" class="btn btn-primary" role="button">Submit</a>
-			</form>
-
+	<form id="phone-alert" class="center-block">
+		<fieldset class="form-group">
+			<label for="phone-number">Address Line 1:</label>					<input type="text" id="old-pin" name="old-pin" size="15" MAXLENGTH="10" class="form-control"/>
+		</fieldset>
+		<fieldset class="form-group">
+			<label for="text">Address Line 2:</label>
+			<input type="text" id="text" name="text" class="form-control"/>
+		</fieldset>
+		<fieldset class="form-group">
+			<label for="no-phone">City, State Zip Code:</label>
+			<input type="text" id="no-phone" name="no-phone" class="form-control"/>
+		</fieldset>
+		<a href="../contact.html" class="btn btn-primary" role="button">Submit</a>
+	</form>
 
 
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
